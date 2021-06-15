@@ -5,24 +5,22 @@ document.getElementById("demo").innerHTML = number();
 
 function suit() {
     return Math.floor(Math.random() * 4 + 1);
-        switch(suit){
+    switch (suit){
         case 1:
-            return 1;
-        break;
+            return document.getElementById("heart").innerHTML = 'amarillo'; 
+            break;
         case 2:
-            return 2;
+            return document.getElementById("diamond").innerHTML = 'verde'; 
             break;
         case 3:
-            return 3;
+            return document.getElementById("black-heart").innerHTML = 'azul'; 
             break;
         case 4:
-            return 4;
+            return document.getElementById("clover").innerHTML = 'gris'; 
             break;
+    }
 }
-
-}
-document.getElementById("suit").innerHTML = suit();
-
+suit();
 // function myFunction() {
 //     alert("Page is loaded");
 // }
