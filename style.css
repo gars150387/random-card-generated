@@ -12,34 +12,16 @@ body{
     display: flex;
     position: relative;
     left: 132px;
-    top: 170px;
+    top: 140px;
     font-size: 5ex;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
     /* margin-left: 132px;
     padding-top: 209px; */
 }
-#heart{
+#suit{
     position: relative;
     top: 20px;
     left: 20px;
-    font-size: large;
-}
-#black-heart{
-    position: relative;
-    top: 20px;
-    left: 20px;
-    font-size: large;
-}
-#clover{
-    position: relative;
-    top: 20px;
-    left: 20px;
-    font-size: large;
-}
-#diamond{
-    position: relative;
-    top: 20px;
-    left: 20px;
-    font-size: large;
+    font-size: xx-large;
 }

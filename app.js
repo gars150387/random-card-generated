@@ -1,26 +1,33 @@
 function number() {
-    return Math.floor(Math.random() * 12 + 1);
-}
+    let numRandom = Math.floor(Math.random() * 13 + 1);
+    if(numRandom > 10 && numRandom<12){
+        return 'J';
+    }else if(numRandom>11 && numRandom<13){
+        return 'Q';
+    }else if(numRandom>12){
+        return 'K';
+    }else{
+        return numRandom;
+    }
+    }
+
 document.getElementById("demo").innerHTML = number();
 
 function suit() {
-    return Math.floor(Math.random() * 4 + 1);
-    switch (suit){
+    let random = Math.floor(Math.random() * 4 + 1);
+    switch (random){
         case 1:
-            return document.getElementById("heart").innerHTML = 'amarillo'; 
+            return '♦'
             break;
         case 2:
-            return document.getElementById("diamond").innerHTML = 'verde'; 
+            return '♥'
             break;
         case 3:
-            return document.getElementById("black-heart").innerHTML = 'azul'; 
+        return '♠'
             break;
         case 4:
-            return document.getElementById("clover").innerHTML = 'gris'; 
+            return '♣'
             break;
     }
 }
-suit();
-// function myFunction() {
-//     alert("Page is loaded");
-// }
+document.getElementById('suit').innerHTML=suit();
