@@ -18,16 +18,14 @@ function suit() {
     switch (random){
         case 1:
             return '♦'
-            break;
         case 2:
             return '♥'
-            break;
         case 3:
-        return '♠'
-            break;
+            return '♠'
         case 4:
             return '♣'
-            break;
     }
 }
-document.getElementById('suit').innerHTML=suit();
+let suit1 = suit()
+document.getElementById('suit').innerHTML=suit1;
+document.getElementById('suit2').innerHTML=suit1;
